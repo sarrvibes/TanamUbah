@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/card3"
+    android:padding="12dp">
+
+    <!-- FOTO EVENT -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fotoEvent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/event1" />
+
+    <!-- NAMA EVENT -->
+    <TextView
+        android:id="@+id/tvEvent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Nama Event"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/fotoEvent"
+        app:layout_constraintTop_toTopOf="@id/fotoEvent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ORGANIZER -->
+    <TextView
+        android:id="@+id/tvOrganizer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Penyelenggara"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/tvEvent"
+        app:layout_constraintTop_toBottomOf="@id/tvEvent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- DESKRIPSI -->
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Deskripsi singkat event maksimal dua baris."
+        android:textColor="#808080"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tvEvent"
+        app:layout_constraintTop_toBottomOf="@id/tvOrganizer"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- JUMLAH RELAWAN -->
+
+    <!-- PROGRESS BAR -->
+    <TextView
+        android:id="@+id/tvRelawan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:text="0 Relawan"
+        android:textColor="@color/hijau3"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/fotoEvent"
+        app:layout_constraintTop_toBottomOf="@id/tvDesc" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="6dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        app:layout_constraintStart_toStartOf="@id/tvEvent"
+        app:layout_constraintTop_toBottomOf="@id/tvRelawan"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

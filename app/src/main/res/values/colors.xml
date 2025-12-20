@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_30_percent">#4DFFFFFF</color>
+    <color name="white_70_percent">#B3FFFFFF</color>
+    <color name="hijau1">#20584D</color>
+    <color name="hijau2">#D9FBDC</color>
+    <color name="hijau3">#2B6156</color>
+    <color name="topbar">#346D5C</color>
+    <color name="hijau2_30p">#4DD9FBDC</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

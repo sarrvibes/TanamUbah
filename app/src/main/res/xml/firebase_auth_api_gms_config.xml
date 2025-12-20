@@ -1,0 +1,5 @@
+<auth-api-gms-config>
+    <auth-url>https://www.googleapis.com/identitytoolkit/v3/relyingparty</auth-url>
+    <client-id>YOUR_WEB_CLIENT_ID</client-id>
+    <api-key>YOUR_FIREBASE_API_KEY</api-key>
+</auth-api-gms-config>

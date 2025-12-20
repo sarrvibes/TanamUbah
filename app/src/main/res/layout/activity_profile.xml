@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Profile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="385dp"
+        android:layout_height="88dp"
+        android:paddingHorizontal="15dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bricolage_grotesque_bold"
+        android:gravity="center"
+        android:text="Profil"
+        android:textColor="@color/hijau3"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/my_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/my_toolbar"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/my_toolbar" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/my_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/my_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/my_toolbar"
+        app:srcCompat="@drawable/logout" />
+
+    <FrameLayout
+        android:id="@+id/card_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pfp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/RoundedCornerImage"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/namaUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/bricolage_grotesque_bold"
+                android:text="@string/nama_user"
+                android:textColor="@color/hijau3"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/pfp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/jml_pengikut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/roboto_semib"
+                android:text="@string/default_pengikut"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/pfp"
+                app:layout_constraintTop_toBottomOf="@+id/namaUser" />
+
+            <TextView
+                android:id="@+id/pengikut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Pengikut"
+                app:layout_constraintStart_toEndOf="@+id/jml_pengikut"
+                app:layout_constraintTop_toBottomOf="@+id/namaUser" />
+
+            <TextView
+                android:id="@+id/mengikuti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/roboto_semib"
+                android:text="0"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/pengikut"
+                app:layout_constraintTop_toBottomOf="@+id/namaUser" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Mengikuti"
+                app:layout_constraintStart_toEndOf="@+id/mengikuti"
+                app:layout_constraintTop_toBottomOf="@+id/namaUser" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="182dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_bg1"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="0dp"
+                android:text="Cari Teman Baru"
+                android:textSize="15sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.038"
+                app:layout_constraintStart_toEndOf="@+id/pfp" />
+
+            <ImageView
+                android:id="@+id/btnEdit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.283"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/edit_profile" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="567dp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_profil"
+        app:layout_constraintVertical_bias="0.145">
+
+
+        <TextView
+            android:id="@+id/eventList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/roboto_semib"
+            android:text="@string/kegiatanmu"
+            android:textColor="@color/hijau3"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEvent"
+            android:layout_width="match_parent"
+            android:layout_height="499dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventList"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/eventmu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:padding="0dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navbar_bottom"
+        app:itemIconTint="@color/ic_navbar"
+        app:itemTextColor="@color/text_navbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

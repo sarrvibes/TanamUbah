@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TanamUbah</string>
+    <string name="heading">Aksi Lokal\nDampak Global</string>
+    <string name="cta">Klik dan Tanam Perubahan</string>
+    <string name="ajak">Siap menjadi Ubahers?</string>
+    <string name="cta2">Create Your Account</string>
+    <string name="confirmation_password">Confirmation Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="fullname">Fullname</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Login</string>
+    <string name="ask_acc">Dont have account? click here </string>
+    <string name="nama_projek">Nama Projek</string>
+    <string name="penyelenggara">Penyelenggara</string>
+    <string name="tambah_eventmu">Tambah Kegiatan</string>
+    <string name="text">Login to Your Account</string>
+    <string name="nama_user">Ubahers</string>
+    <string name="default_pengikut">0</string>
+    <string name="kegiatanmu">Kegiatanmu</string>
+    <string name="ubah_profil">Ubah Profil</string>
+    <string name="sapaan">Hi Ubahers</string>
+</resources>

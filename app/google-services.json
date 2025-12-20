@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "766549982042",
+    "firebase_url": "https://tanamubah-default-rtdb.firebaseio.com",
+    "project_id": "tanamubah",
+    "storage_bucket": "tanamubah.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766549982042:android:acc7fc22a42872c5501163",
+        "android_client_info": {
+          "package_name": "id.ac.unsyiah.android.tanamubah"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACsYqwr_4H6SYlZZ7vuIogbH4fQaKjHxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

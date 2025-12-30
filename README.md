@@ -45,9 +45,9 @@
 - currentRelawan
 - registrations (sub-collection)
 - userId (document)
-├── userId
-└── registeredAt
-
+-  userId
+- registeredAt
+![file link](firebase.txt)
 
 Pendekatan ini memastikan:
 - Setiap user hanya bisa mendaftar satu kali per event

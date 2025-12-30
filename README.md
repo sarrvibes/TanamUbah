@@ -1,6 +1,7 @@
-# 🌱 TanamUbah
-
+# 🌱 TanamUbah 
+![Logo](app/src/main/res/drawable/logo_utama.png)
 **TanamUbah** adalah aplikasi mobile berbasis Android yang berfokus pada pengelolaan dan partisipasi kegiatan lingkungan, khususnya event penanaman dan aksi hijau. Aplikasi ini memudahkan pengguna untuk menemukan event, melihat detail kegiatan, serta mendaftar sebagai relawan secara langsung melalui aplikasi.
+
 
 ---
 

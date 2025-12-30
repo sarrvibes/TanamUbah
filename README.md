@@ -47,6 +47,7 @@
 - userId (document)
 -  userId
 - registeredAt
+  
 ![file link](firebase.txt)
 
 Pendekatan ini memastikan:
